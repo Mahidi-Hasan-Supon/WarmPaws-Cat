@@ -1,0 +1,74 @@
+[
+  {
+    "serviceId": 1,
+    "serviceName": "Winter Coat Fitting for Dogs",
+    "providerName": "PawCare Studio",
+    "providerEmail": "info@pawcare.com",
+    "price": 25,
+    "rating": 4.9,
+    "slotsAvailable": 4,
+    "description": "Custom coat fitting and warm outfit options to keep your dog comfortable in the cold.",
+    "image": "https://i.ibb.co.com/LXbPKNQ3/cute-white-chihuahua-with-sweater.jpg",
+    "category": "Clothing"
+  },
+  {
+    "serviceId": 2,
+    "serviceName": "Winter Grooming & Paw Treatment",
+    "providerName": "CozyPets Grooming",
+    "providerEmail": "hello@cozypets.com",
+    "price": 30,
+    "rating": 4.8,
+    "slotsAvailable": 3,
+    "description": "Professional grooming with moisturizing paw balm and winter-safe shampoo.",
+    "image": "https://i.ibb.co.com/JjDJt63Z/images-1.jpg",
+    "category": "Grooming"
+  },
+  {
+    "serviceId": 3,
+    "serviceName": "Holiday Pet Photoshoot",
+    "providerName": "FurryClick Studio",
+    "providerEmail": "contact@furryclick.com",
+    "price": 40,
+    "rating": 4.7,
+    "slotsAvailable": 5,
+    "description": "Festive-themed professional photoshoot for your pets with cute props.",
+    "image": "https://i.ibb.co.com/9k7J1hKz/cartoon-like-possum-illustration.jpg",
+    "category": "Photography"
+  },
+  {
+    "serviceId": 4,
+    "serviceName": "Winter Dental Care",
+    "providerName": "HealthyPaws Vet",
+    "providerEmail": "services@healthypaws.com",
+    "price": 35,
+    "rating": 4.6,
+    "slotsAvailable": 2,
+    "description": "Dental checkup and cleaning to ensure your pet’s teeth stay healthy during winter.",
+    "image": "https://i.ibb.co.com/vC5ZYLB7/happy-veterinarian-woman-using-stethoscope-listen-heart-cute-beagle-dog-caucasian-vet-hispanic-man-e.jpg",
+    "category": "Health"
+  },
+  {
+    "serviceId": 5,
+    "serviceName": "Cozy Winter Bed Setup",
+    "providerName": "SnugglePets",
+    "providerEmail": "support@snugglepets.com",
+    "price": 50,
+    "rating": 4.9,
+    "slotsAvailable": 6,
+    "description": "Custom cozy beds and blankets to keep your pet warm and comfortable.",
+    "image": "https://i.ibb.co.com/rGHsRddB/vecteezy-photo-of-small-pedigree-dog-lies-in-comfortable-bed-under-8837171.jpg",
+    "category": "Accessories"
+  },
+  {
+    "serviceId": 6,
+    "serviceName": "Winter Playdate & Socialization",
+    "providerName": "HappyPaws Club",
+    "providerEmail": "info@happypawsclub.com",
+    "price": 20,
+    "rating": 4.5,
+    "slotsAvailable": 8,
+    "description": "Supervised indoor playdates to keep your pets active and social during cold months.",
+    "image": "https://i.ibb.co.com/HLybtRkQ/dog-playing-with-kid-snow-with-family.jpg",
+    "category": "Activities"
+  }
+]

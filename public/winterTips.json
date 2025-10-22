@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Keep Them Warm",
+    "description": "Use cozy blankets and sweaters for your pets to stay warm during cold nights.",
+    "icon": "❄️",
+    "image": "https://i.ibb.co.com/S4FRnfSZ/gettyimages-511214258-612x612.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Hydration Matters",
+    "description": "Make sure pets have access to clean, slightly warm water at all times.",
+    "icon": "💧",
+    "image": "https://i.ibb.co.com/mCqxZmSR/download-2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Avoid Long Outdoor Time",
+    "description": "Limit outdoor walks and use booties to protect their paws from frost.",
+    "icon": "🐾",
+    "image": "https://i.ibb.co.com/QjP7YCMq/download-3.jpg"
+  }
+]
