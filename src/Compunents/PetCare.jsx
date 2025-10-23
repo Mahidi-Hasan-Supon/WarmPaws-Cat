@@ -1,4 +1,5 @@
 import React, { use } from "react";
+import { Link } from "react-router";
 
 const petPromise = fetch("/services.json").then((res) => res.json());
 
@@ -19,7 +20,7 @@ const PetCare = () => {
                 <h1 className="font-semibold">Rating: {pet.rating}</h1>
               <h1 className="font-semibold">Price: ${pet.price}</h1>
               </div>
-              <button className="btn w-full btn-secondary">View Details</button>
+              <Link to={`/service-details/${pet.serviceId}`} className="btn w-full btn-secondary">View Details</Link>
             </div>
           </div>
         ))}

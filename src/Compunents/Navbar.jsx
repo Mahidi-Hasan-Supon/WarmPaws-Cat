@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router";
 import petImg from '../assets/winterPet.jpg'
 const Navbar = () => {
-    const links = <div className="flex">
+    const links = <div className="flex text-lg font-bold">
         <li>
             <NavLink to='/'>Home</NavLink>
         </li>
@@ -54,7 +54,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Register</a>
+          <a className="btn font-bold bg-pink-500 text-white">Register</a>
         </div>
       </div>
     </div>
