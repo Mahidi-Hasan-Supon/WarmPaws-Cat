@@ -5,11 +5,18 @@ import Services from "../pages/Services";
 import MyProfile from "../pages/MyProfile";
 import ServiceCard from "../Compunents/ServiceCard";
 import ServiceDetails from "../pages/ServiceDetails";
+import Login from "../pages/Login";
+import Signup from "../pages/Signup";
+import PrivateRoute from "../private/PrivateRoute";
+import UpdataProfile from "../Compunents/UpdataProfile";
+import Error from "../Compunents/Error";
+import Loading from "../Compunents/Loading";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     Component: Root,
+    hydrateFallbackElement:<Loading></Loading>,
     children: [
       {
         path: "/",
@@ -22,7 +29,7 @@ export const router = createBrowserRouter([
       },
       {
         path:'/service-details/:id',
-        Component:ServiceDetails,
+        element:<PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>,
         
         loader: async ({ params }) => {
     
@@ -36,6 +43,21 @@ export const router = createBrowserRouter([
         path:'/myprofile',
         Component:MyProfile,
       },
+      {
+        path:'/login',
+        Component:Login,
+      },
+      {
+        path:'/signUP',
+        Component:Signup,
+      },
+      {
+        path:'/updateprofile',
+        element:<PrivateRoute><UpdataProfile></UpdataProfile></PrivateRoute>,
+      },
+      {
+        errorElement:<Error></Error>
+      }
 
     ],
   },
