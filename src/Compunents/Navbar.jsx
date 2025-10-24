@@ -1,15 +1,17 @@
 import React, { use } from "react";
 import { Link, NavLink } from "react-router";
-import petImg from "../assets/winterPet.jpg";
 import { AuthContext } from "../context/AuthContext";
 import { toast, ToastContainer } from "react-toastify";
 import userImg from "../assets/user.png";
 import { LoaderIcon } from "react-hot-toast";
 import Loading from "./Loading";
 import { RiseLoader } from "react-spinners";
+import petImg from '../assets/pet.png'
+
+
 const Navbar = () => {
   const { user, signOutFunc, setUser, loading } = use(AuthContext);
-  console.log(user);
+ 
   const links = (
     <div className="flex text-lg font-bold">
       <li>
@@ -68,20 +70,20 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <div className="md:ml-8 flex items-center">
+        <div className="md:ml-10 flex items-center">
           <img
             src={petImg}
-            className="h-[20px] w-[20px] rounded-md"
+            className="h-[40px] w-[40px] rounded-lg"
             alt="winterPet"
           />
-          <h2 className="ml-2 text-xl font-semibold opacity-70">Pet Care</h2>
+          <h2 className="ml-2 text-xl font-semibold opacity-70">WarmPaws</h2>
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       {loading ? (
-       <p className="md:ml-50"> <RiseLoader></RiseLoader></p>
+       <p className="md:ml-30"> <RiseLoader></RiseLoader></p>
       ) : (
         <div className="navbar-end md:mr-8 gap-5">
           <img
@@ -89,7 +91,7 @@ const Navbar = () => {
             className="rounded-2xl h-[40px] w-[40px]"
             alt=""
           />
-          <div className="md:mr-50 space-x-5 gap-5">
+          <div className="md:mr-30 space-x-5 gap-5">
             {user ? (
               <button onClick={handleSignOut} className="btn btn-primary">
                 Login out

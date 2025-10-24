@@ -43,7 +43,7 @@ const Signup = () => {
         updateProfileFunc(displayName, photoURL)
           .then(() => {
             toast("Sign Up");
-            navigate(location.state ||'')
+            navigate(location.state ||'/')
           })
           .catch((e) => {
             toast.error(e.message);
@@ -60,7 +60,7 @@ const Signup = () => {
       .then((res) => {
         console.log(res.user);
         setUser(res.user);
-        navigate(location.state ||'')
+        navigate(location.state ||'/')
       })
       .catch((e) => {
         console.log(e);

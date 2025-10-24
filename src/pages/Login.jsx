@@ -11,16 +11,11 @@ const Login = () => {
   const emailRef = useRef(null);
   const {
     signInWithEmailAndPasswordFunc,
-    user,
-    setUser,
-    signOutFunc,
-    signInWithPopupFunc,
-    sendPasswordResetEmailFunc,
-  } = use(AuthContext);
 
-  if (user) {
-    navigate("/");
-  }
+    setUser,
+
+    signInWithPopupFunc,
+  } = use(AuthContext);
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -53,18 +48,9 @@ const Login = () => {
       });
   };
   const handleForget = () => {
-    const email = emailRef.current.value;
-    console.log(email);
-    sendPasswordResetEmailFunc(email)
-      .then(() => {
-        toast("Reset Password");
-      })
-      .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        toast(errorCode, errorMessage);
-        // ..
-      });
+    const email = emailRef.current?.value
+    navigate("/auth/forgetPassword", { state: { email } });
+    console.log(navigate);
   };
   return (
     <div className="py-20 flex justify-center items-center">

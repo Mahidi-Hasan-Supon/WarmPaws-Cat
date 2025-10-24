@@ -3,6 +3,7 @@ import PetCare from "../Compunents/PetCare";
 import Slider from "../Compunents/Slider";
 import WinterPets from "../Compunents/WinterPets";
 import PetTips from "../Compunents/PetTips";
+import 'animate.css';
 
 const Home = () => {
   return (
@@ -11,7 +12,7 @@ const Home = () => {
       <PetCare></PetCare>
       <section className="my-10">
         <div>
-          <h2 className="text-xl font-bold text-center">
+          <h2 className="text-xl font-bold text-center animate__animated animate__bounce">
             Winter Care Tips for Pets
           </h2>
           <WinterPets></WinterPets>
