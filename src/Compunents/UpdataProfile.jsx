@@ -35,7 +35,7 @@ const UpdataProfile = () => {
       });
   };
   return (
-    <div className="py-40 flex justify-center items-center">
+    <div className="py-50 flex justify-center items-center">
       <div className="card bg-base-100 w-full max-w-sm  shrink-0 shadow-2xl">
         <div className="card-body gap-5">
           <h1 className="text-center text-2xl font-bold">

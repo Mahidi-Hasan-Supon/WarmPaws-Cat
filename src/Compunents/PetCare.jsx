@@ -15,7 +15,7 @@ const PetCare = () => {
       </h2>
       <div className="grid md:grid-cols-3 gap-3">
         {pets.map((pet) => (
-          <div className="border border-white hover:shadow-2xl bg-[#fff3e0] w-[300px] shadow p-3 rounded-2xl ">
+          <div className="border border-white hover:shadow-2xl bg-white w-[300px] shadow p-3 rounded-2xl ">
             <div className="space-y-3">
               <img
                 src={pet.image}

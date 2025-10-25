@@ -51,7 +51,7 @@ const Login = () => {
     console.log(navigate);
   };
   return (
-    <div className="py-20 flex justify-center items-center bg-[#FFF4E7] bg-[url('/paw.png')]">
+    <div className="py-20 flex justify-center items-center bg-[url('/paw.png')]">
       <div className="card bg-white w-full max-w-sm my-20 shrink-0 shadow-2xl">
         <div className="card-body">
           <h1 className="text-center text-2xl font-bold">Login</h1>

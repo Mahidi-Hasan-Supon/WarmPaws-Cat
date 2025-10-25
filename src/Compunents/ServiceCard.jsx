@@ -26,7 +26,7 @@ const ServiceCard = ({ dataDetails }) => {
 
  }
   return (
-    <div className="my-5 md:flex md:w-4xl mx-auto gap-10">
+    <div className="py-10 md:flex md:w-4xl mx-auto gap-10">
       <div className="card bg-base-100 md:w-[700px] shadow-sm p-3.5 space-x-4">
         <figure>
           <img
