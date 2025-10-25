@@ -1,7 +1,8 @@
 @import "tailwindcss";
-@plugin "daisyui";
-
-
+@plugin "daisyui" {
+  themes: light --default, dark ,cupcake,  --prefersdark halloween;
+}
 ul a.active{
     @apply text-green-600 underline
 }
+

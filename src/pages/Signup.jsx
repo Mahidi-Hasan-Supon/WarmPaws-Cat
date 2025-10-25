@@ -68,7 +68,7 @@ const Signup = () => {
       });
   };
   return (
-    <div className="py-20 flex justify-center items-center">
+    <div className="py-20 flex justify-center items-center bg-[#FFF4E7]">
       <div className="card bg-base-100 w-full max-w-sm  shrink-0 shadow-2xl">
         <div className="card-body">
           <h1 className="text-center text-2xl font-bold">Resgister</h1>

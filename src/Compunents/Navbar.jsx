@@ -5,15 +5,15 @@ import { toast, ToastContainer } from "react-toastify";
 import userImg from "../assets/user.png";
 import { LoaderIcon } from "react-hot-toast";
 import Loading from "./Loading";
-import { RiseLoader } from "react-spinners";
-import petImg from '../assets/pet.png'
-
+import { BeatLoader, RiseLoader } from "react-spinners";
+import petImg from "../assets/pet.png";
+import "animate.css";
 
 const Navbar = () => {
   const { user, signOutFunc, setUser, loading } = use(AuthContext);
- 
+
   const links = (
-    <div className="flex text-lg font-bold">
+    <div className="flex text-lg font-bold animate__animated animate__bounce">
       <li>
         <NavLink to="/">Home</NavLink>
       </li>
@@ -43,7 +43,7 @@ const Navbar = () => {
         }
   */
   return (
-    <div className="navbar bg-base-100 shadow-sm">
+    <div className="navbar bg-[#fff3e0] shadow-xl">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -83,28 +83,45 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       {loading ? (
-       <p className="md:ml-30"> <RiseLoader></RiseLoader></p>
+        <p className="md:ml-100 ml-30">
+          {" "}
+          <BeatLoader></BeatLoader>
+        </p>
       ) : (
-        <div className="navbar-end md:mr-8 gap-5">
-          <img
-            src={`${user ? user.photoURL : userImg}`}
-            className="rounded-2xl h-[40px] w-[40px]"
-            alt=""
-          />
-          <div className="md:mr-30 space-x-5 gap-5">
-            {user ? (
-              <button onClick={handleSignOut} className="btn btn-primary">
-                Login out
+        <div className="navbar-end md:mr-8 flex items-center gap-5">
+          {user ? (
+            <>
+              {/*Avatar with hover tooltip */}
+              <div className="relative group cursor-pointer">
+                <img
+                  src={user.photoURL}
+                  className="rounded-full h-[45px] w-[45px] border-2 border-pink-400"
+                  alt="User Avatar"
+                />
+                {/* Hover এ displayName */}
+                <div className="absolute bottom-[-40px] left-1/2 -translate-x-1/2 bg-pink-500 text-white text-sm font-semibold px-3 py-1 rounded-md opacity-0 group-hover:opacity-100 transition duration-300 whitespace-nowrap shadow-lg">
+                  {user.displayName || "No Name"}
+                </div>
+              </div>
+
+              <button
+                onClick={handleSignOut}
+                className="btn bg-linear-to-r from-[#FF8938] to-[#FF0000] text-white font-bold border-none hover:bg-pink-600"
+              >
+                Log Out
               </button>
-            ) : (
+            </>
+          ) : (
+            <div className="flex gap-4">
+              <img src={userImg} alt="" />
               <Link
                 to="/signUp"
                 className="btn font-bold bg-pink-500 text-white"
               >
                 Login
               </Link>
-            )}
-          </div>
+            </div>
+          )}
         </div>
       )}
       <ToastContainer></ToastContainer>

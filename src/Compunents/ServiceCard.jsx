@@ -1,5 +1,6 @@
 import React from "react";
 import { toast, ToastContainer } from "react-toastify";
+import 'animate.css'
 
 const ServiceCard = ({ dataDetails }) => {
   const {
@@ -34,7 +35,7 @@ const ServiceCard = ({ dataDetails }) => {
             alt="Shoes"
           />
         </figure>
-        <div className="card-body">
+        <div className="card-body animate__animated animate__bounce">
           <h2 className="card-title text-2xl font-bold text-center text-orange-400">
             {serviceName}
             {/* <div className="badge badge-secondary">NEW</div> */}

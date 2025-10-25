@@ -1,16 +1,26 @@
-import React from 'react';
-import { Outlet } from 'react-router';
-import Navbar from '../Compunents/Navbar';
-import Footer from '../Compunents/Footer';
+import React, { use } from "react";
+import { Outlet } from "react-router";
+import Navbar from "../Compunents/Navbar";
+import Footer from "../Compunents/Footer";
+import { AuthContext } from "../context/AuthContext";
+import Loading from "../Compunents/Loading";
 
 const Root = () => {
-    return (
-        <div>
-            <Navbar></Navbar>
-            <Outlet></Outlet>
-            <Footer></Footer>
-        </div>
-    );
+  const {loading} = use(AuthContext)
+  return (
+    <div>
+      <Navbar></Navbar>
+      {loading?<div>
+         <Loading></Loading>
+      </div>
+      :
+     <div className="bg-[url('/pet.png')]">
+       <Outlet></Outlet>
+     </div>
+      }
+      <Footer></Footer>
+    </div>
+  );
 };
 
 export default Root;
