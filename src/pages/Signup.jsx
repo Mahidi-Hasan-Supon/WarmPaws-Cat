@@ -40,10 +40,13 @@ const Signup = () => {
     createUserWithEmailAndPasswordFunc(email, password)
       .then((res) => {
         console.log(res.user);
+         toast("Sign Up Successful");
         updateProfileFunc(displayName, photoURL)
           .then(() => {
             toast("Sign Up Successful");
-            navigate(location.state ||'/')
+              setTimeout(() => {
+            navigate(location.state || "/");
+          }, 1500);
           })
           .catch((e) => {
             toast.error(e.message);
