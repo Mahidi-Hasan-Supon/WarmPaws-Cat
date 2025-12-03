@@ -6,6 +6,7 @@ import PetTips from "../Compunents/PetTips";
 import "animate.css";
 import { FaHeart, FaShieldAlt, FaUserMd, FaSnowflake } from "react-icons/fa";
 import Warms from "../Compunents/Warms";
+import Testominals from "../Compunents/Testominals";
 
 const Home = () => {
   return (
@@ -30,6 +31,9 @@ const Home = () => {
         </section>
        <section className="mt-5 py-5">
         <Warms></Warms>
+       </section>
+       <section>
+        <Testominals></Testominals>
        </section>
       </div>
     </div>

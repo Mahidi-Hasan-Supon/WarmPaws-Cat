@@ -12,12 +12,15 @@ import UpdataProfile from "../Compunents/UpdataProfile";
 import Error from "../Compunents/Error";
 import Loading from "../Compunents/Loading";
 import ForgetPassword from "../Compunents/ForgetPassword";
+import AboutUs from "../pages/AboutUs";
+import Contact from "../pages/Contact";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     Component: Root,
     hydrateFallbackElement: <Loading></Loading>,
+    errorElement:<Error></Error>,
     children: [
       {
         path: "/",
@@ -26,6 +29,14 @@ export const router = createBrowserRouter([
       {
         path: "/services",
         Component: Services,
+      },
+      {
+         path:'aboutUs',
+         Component:AboutUs
+      },
+      {
+         path:'contact',
+         Component:Contact
       },
       {
         path: "/service-details/:id",

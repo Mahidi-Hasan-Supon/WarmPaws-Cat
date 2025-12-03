@@ -9,13 +9,13 @@ const PetCare = () => {
   const pets = use(petPromise);
   console.log(pets);
   return (
-    <div className="py-5 md:w-5xl mx-auto">
+    <div className="py-10">
       <h2 className="text-4xl font-bold md:text-center py-5 mb-5 animate__animated animate__bounce">
         Pet Care in Winter
       </h2>
-      <div className="grid md:grid-cols-3 gap-3">
+      <div className="grid md:grid-cols-4 gap-20  mr-8">
         {pets.map((pet) => (
-          <div className="border border-white hover:shadow-2xl bg-white w-[300px] shadow p-3 rounded-2xl ">
+          <div className="border border-white hover:shadow-2xl w-[270px] bg-white  shadow p-3 rounded-2xl ">
             <div className="space-y-3">
               <img
                 src={pet.image}

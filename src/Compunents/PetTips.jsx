@@ -5,9 +5,9 @@ const PetTips = () => {
   const petTips = use(petTipsPromise);
   console.log(petTips);
   return (
-    <div className="gap-5 grid md:grid-cols-3  mt-5">
+    <div className="gap-5 grid md:grid-cols-2  mt-5">
       {petTips.map((petTip) => (
-        <div className="bg-white gap-5 p-5 hover:shadow-2xl  rounded-2xl md:w-[500px] text-center">
+        <div className="bg-white gap-10 p-5 hover:shadow-2xl  rounded-2xl md:w-[500px] text-center">
 
         <div className="space-y-3">
             <span>{petTip.stars}</span>

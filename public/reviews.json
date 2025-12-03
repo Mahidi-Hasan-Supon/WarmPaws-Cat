@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Amina Rahman",
+    "feedback": "Adopting from WarmPaws was the best decision! The cat was very healthy and their service was amazing!",
+    "img": "https://i.ibb.co.com/zhN2qSN8/download.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Hasib Khan",
+    "feedback": "The service was very professional and caring. I adopted Milo — he is playful and adorable!",
+    "img": "https://i.ibb.co.com/gMnLsG3v/download.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Raisa Tasnim",
+    "feedback": "WarmPaws truly cares about animal welfare. My experience was wonderful!",
+    "img": "https://i.ibb.co.com/xtGDFJjj/download.jpg"
+  }
+]

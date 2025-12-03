@@ -8,13 +8,13 @@ import Loading from "../Compunents/Loading";
 const Root = () => {
   const {loading} = use(AuthContext)
   return (
-    <div>
+    <div className="md:w-7xl mx-auto">
       <Navbar></Navbar>
       {loading?<div>
          <Loading></Loading>
       </div>
       :
-     <div className="bg-[url('/pet.png')]">
+     <div className="bg-[url('/pet.png')] ">
        <Outlet></Outlet>
      </div>
       }
